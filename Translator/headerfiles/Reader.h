@@ -7,7 +7,6 @@
 using namespace std;
 class read {
 public:
-
 	vector<point> reader();
 	vector<double> unique();
 };
