@@ -3,7 +3,8 @@
 #include"triangle.h"
 #include<vector>
 class triangulation {
-public:
+private:
 	vector<double> points;
+public:
 	vector<triangle> add_unique_points(vector<point> points);
 };
