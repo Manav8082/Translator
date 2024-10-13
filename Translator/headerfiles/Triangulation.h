@@ -1,10 +1,10 @@
 #pragma once
-#include"point.h"
-#include"triangle.h"
+#include"Point.h"
+#include"Triangle.h"
 #include<vector>
-class triangulation {
+class Triangulation {
 private:
 	vector<double> points;
 public:
-	vector<triangle> add_unique_points(vector<point> points);
+	vector<Triangle> add_unique_points(vector<Point> points);
 };
