@@ -54,6 +54,6 @@ vector<Point> Read::reader() {
 	return u_points;
 
 }
-vector<double> read::unique() {
+vector<double> Read::unique() {
 	return get_points;
 }
