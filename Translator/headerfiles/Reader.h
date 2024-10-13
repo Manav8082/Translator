@@ -5,7 +5,7 @@
 #include"Point.h"
 
 using namespace std;
-class read {
+class Read {
 public:
 	vector<point> reader();
 	vector<double> unique();
