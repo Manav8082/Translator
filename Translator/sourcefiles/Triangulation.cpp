@@ -3,7 +3,7 @@
 #include"Reader.h"
 #include"Triangle.h"
 #include<vector>
-vector<triangle> Triangulation::add_unique_points(vector<Point> points){
+vector<Triangle> Triangulation::add_unique_points(vector<Point> points){
 	
 	vector<Triangle> get_triangle;
 	if (points.size() % 3 == 0) {
