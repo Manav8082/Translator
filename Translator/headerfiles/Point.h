@@ -2,7 +2,7 @@
 #pragma once
 #include<iostream>
 using namespace std;
-class point {
+class Point {
 private:
     int x, y, z;
 public:
