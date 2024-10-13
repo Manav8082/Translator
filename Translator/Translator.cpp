@@ -10,7 +10,7 @@ int main() {
 	Triangulation t;
 	vector<Triangle> get_triangles = t.add_unique_points( get_points);
 	Write w;
-	w.writer(get_triangles,u_points);
+	w.Writer(get_triangles,u_points);
 
 
 }
