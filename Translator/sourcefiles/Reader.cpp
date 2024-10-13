@@ -7,7 +7,7 @@
 #include<unordered_map>
 vector<Point> u_points;
 vector<double>get_points;
-vector<Point> read::reader() {
+vector<Point> Read::reader() {
 	ifstream myfile("sphere-ascii.stl");
 	unordered_map<double, int> umap;
 	string line;
