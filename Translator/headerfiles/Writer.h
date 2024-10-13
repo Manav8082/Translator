@@ -8,6 +8,6 @@
 #include"Triangle.h"
 class Write {
 public:
-	void writer(vector<triangle> get_triangles,vector<double> getpoints);
+	void Writer(vector<Triangle> get_triangles,vector<double> getpoints);
 
 };
