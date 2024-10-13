@@ -1,5 +1,5 @@
 #include"Writer.h"
-void write::writer(vector<triangle> get_triangles, vector<double> get_points) {
+void Write::Writer(vector<Triangle> get_triangles, vector<double> get_points) {
 	ofstream myfile("output.dat");
 	for(auto i:get_triangles){
 		myfile << get_points[i.get_p1_x_coodinate()] << " " << get_points[i.get_p1_y_coodinate()] << " " << get_points[i.get_p1_z_coodinate()] << endl;
