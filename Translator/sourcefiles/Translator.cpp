@@ -11,6 +11,4 @@ int main() {
 	vector<Triangle> get_triangles = t.add_unique_points( get_points);
 	Write w;
 	w.Writer(get_triangles,u_points);
-
-
 }
