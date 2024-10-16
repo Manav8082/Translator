@@ -24,30 +24,30 @@
     <ClCompile Include="sourcefiles\triangulation.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Translator.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="sourcefiles\reader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sourcefiles\writer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="sourcefiles\Translator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="headerfiles\point.h">
+    <ClInclude Include="headerfiles\Point.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerfiles\triangle.h">
+    <ClInclude Include="headerfiles\Triangle.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerfiles\triangulation.h">
+    <ClInclude Include="headerfiles\Triangulation.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerfiles\reader.h">
+    <ClInclude Include="headerfiles\Reader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerfiles\writer.h">
+    <ClInclude Include="headerfiles\Writer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

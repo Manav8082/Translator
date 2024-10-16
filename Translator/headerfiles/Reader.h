@@ -2,11 +2,11 @@
 #include<iostream>
 #include<fstream>
 #include<vector>
-#include"Point.h"
+#include "Point.h"
 
 using namespace std;
 class Read {
 public:
-	vector<point> reader();
+	vector<Point> reader();
 	vector<double> unique();
 };

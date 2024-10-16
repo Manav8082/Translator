@@ -9,6 +9,7 @@ vector<Point> u_points;
 vector<double>get_points;
 vector<Point> Read::reader() {
 	ifstream myfile("sphere-ascii.stl");
+	cout << "chintu";
 	unordered_map<double, int> umap;
 	string line;
 	int index = 0, x1, y1, z1;
