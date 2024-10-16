@@ -4,10 +4,10 @@
 #include<vector>
 #include<unordered_map>
 #include<string>
-#include"point.h"
-#include"triangle.h"
-class write {
+#include"Point.h"
+#include"Triangle.h"
+class Write {
 public:
-	void writer(vector<triangle> get_triangles,vector<double> getpoints);
+	void Writer(vector<Triangle> get_triangles,vector<double> getpoints);
 
 };
