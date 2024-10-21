@@ -1,10 +1,10 @@
 #include<iostream>
 #include"Triangulation.h"
-#include"Reader.h"
+#include"StlReader.h"
 #include"Writer.h"
 using namespace std;
 int main() {
-	Read re;
+	StlReader re;
 	vector<Point> get_points = re.reader();
 	vector<double> u_points = re.unique();
 	Triangulation t;

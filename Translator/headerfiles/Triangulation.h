@@ -2,9 +2,10 @@
 #include"Point.h"
 #include"Triangle.h"
 #include<vector>
+
 class Triangulation {
 private:
-	vector<double> points;
+	vector <Triangle> TrianglesList;
 public:
-	vector<Triangle> add_unique_points(vector<Point> points);
+	void insertTriangles(Triangle& triangle);
 };

@@ -1,10 +1,18 @@
 #include"Writer.h"
 #include"Point.h"
 #include"Triangle.h"
-void Write::Writer(vector<Triangle> get_triangles, vector<double> get_points) {
+
+Write::Write()
+{
+}
+Write::~Write()
+{
+}
+
+void Write::Writer(vector<Triangle> TriangleList, vector<double> get_points) {
     ofstream myfile("output.dat");
-    for (auto i : get_triangles) {
-        myfile << get_points[i.get_p1_x_coordinate()] << " "
+    for (auto i : TriangleList) {
+        myfile << get_points[i.getP1Points()] << " "
             << get_points[i.get_p1_y_coordinate()] << " "
             << get_points[i.get_p1_z_coordinate()] << endl;
         myfile << get_points[i.get_p2_x_coordinate()] << " "
