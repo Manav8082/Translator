@@ -1,14 +1,18 @@
 #include<iostream>
 #include"Triangulation.h"
 #include"StlReader.h"
-#include"Writer.h"
+#include"StlWriter.h"
 using namespace std;
 int main() {
-	StlReader re;
-	vector<Point> get_points = re.reader();
-	vector<double> u_points = re.unique();
-	Triangulation t;
-	vector<Triangle> get_triangles = t.add_unique_points( get_points);
-	Write w;
-	w.Writer(get_triangles,u_points);
+	Triangulation tri;
+	StlReader reader1;
+    StlWriter writer1;
+	string inputFile;
+	cout << "Enter the input file: ";
+	cin >> inputFile;
+	reader1.read(inputFile, tri);
+	string outputFile;
+	cout << "Enter the name of output file: ";
+	cin >> outputFile;
+	writer1.Write(outputFile,tri);
 }

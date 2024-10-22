@@ -1,14 +1,10 @@
 #pragma once
-#include<iostream>
-#include<fstream>
-#include<vector>
 #include<string>
-#include"Point.h"
-#include"Triangle.h"
-class Write
+#include"Triangulation.h"
+class Writer
 {
 public:
-	Write();
-	~Write();
-	void Writer(vector<Triangle> TriangleList,vector<double> getpoints);
+	Writer();
+	~Writer();
+	virtual void Write(string& outputFile, Triangulation& traingulation) = 0;
 };

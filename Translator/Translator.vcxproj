@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>D:\manavworkspace\Translator\Manav8082\Translator\Translator\headerfiles;E:\ManavWorkspace\Translator\sourcefiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>E:\ManavWorkspace\Translator\Translator\Translator\headerfiles;E:\ManavWorkspace\Translator\sourcefiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -134,7 +134,8 @@
     <ClCompile Include="sourcefiles\Translator.cpp" />
     <ClCompile Include="sourcefiles\triangle.cpp" />
     <ClCompile Include="sourcefiles\triangulation.cpp" />
-    <ClCompile Include="sourcefiles\writer.cpp" />
+    <ClCompile Include="sourcefiles\StlWriter.cpp" />
+    <ClCompile Include="sourcefiles\Writer.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="headerfiles\Point.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="headerfiles\Reader_base.h" />
     <ClInclude Include="headerfiles\Triangle.h" />
     <ClInclude Include="headerfiles\Triangulation.h" />
+    <ClInclude Include="headerfiles\StlWriter.h" />
     <ClInclude Include="headerfiles\Writer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -2,6 +2,11 @@
 #include<fstream>
 #include<sstream>
 #include "Triangle.h"
+#include "Triangulation.h"
+#include<iostream>
+
+using namespace std;
+
 StlReader::StlReader()
 {
 }
@@ -10,26 +15,25 @@ StlReader::~StlReader()
 {
 }
 
-int StlReader::findAndAdd(vector<double>& uniquePointsList,double& coordinate)
+int StlReader::findAndAdd(double& coordinate, Triangulation& triangulation, int& index)
 {
-	for (int i = 0; i < uniquePointsList.size(); i++)
+	if (doubleMap.find(coordinate) == doubleMap.end())
 	{
-		if (isEqualChecker(uniquePointsList[i], coordinate))
-		{
-			return i;
-		}
-		uniquePointsList.push_back(coordinate);
-		return uniquePointsList.size() - 1;
+		doubleMap[coordinate] = index;
+		triangulation.UniquePoints.push_back(coordinate);
+		return index++;
 	}
-	
+	else {
+		return doubleMap[coordinate];
+	}
 }
 
 
-vector<Point> u_points;
-vector<double>get_points;
 
 void StlReader::read(const string& inputFile, Triangulation& triangulation)
 {
+	vector<Point> UniquePoints;
+	vector<double>getPoints;
 	ifstream myfile(inputFile);
 	string line;
 	int index = 0;
@@ -45,21 +49,20 @@ void StlReader::read(const string& inputFile, Triangulation& triangulation)
 			double x;
 			double y;
 			double z;
-
-			if (iss >> token >> x >> y >> z) {
+			if (iss >> token >> x >> y >> z) 
+			{
 				if (token == "vertex")
 				{
-					x1 = findAndAdd(get_points, x);
-					y1 = findAndAdd(get_points, y);
-					z1 = findAndAdd(get_points, z);
+					x1 = findAndAdd(x,triangulation,index);
+					y1 = findAndAdd(y,triangulation,index);
+					z1 = findAndAdd(z,triangulation,index);
+					UniquePoints.push_back(Point(x1,y1,z1));
 				}
-				Point p(x1, y1, z1);
-				u_points.push_back(p);
 			}
-			if (u_points.size() == 3)
+			if (UniquePoints.size() == 3)
 			{
-				createTriangles(u_points[0], u_points[1], u_points[2], triangulation);
-				u_points.clear();
+				createTriangles(UniquePoints[0], UniquePoints[1], UniquePoints[2], triangulation);
+				UniquePoints.clear();
 			}
 		}
 	}
@@ -67,8 +70,6 @@ void StlReader::read(const string& inputFile, Triangulation& triangulation)
 	{
 		throw("file doesn't exist");
 	}
-	//return u_points;
-
 }
 void StlReader::createTriangles(Point& p1, Point& p2, Point& p3, Triangulation& triangulation)
 {

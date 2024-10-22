@@ -3,9 +3,14 @@
 #include"Triangle.h"
 #include<vector>
 
+using namespace std;
+
 class Triangulation {
-private:
-	vector <Triangle> TrianglesList;
 public:
+	Triangulation();
+	~Triangulation();
+	vector<double> UniquePoints;
+	vector<Triangle> TrianglesList;
 	void insertTriangles(Triangle& triangle);
+	
 };

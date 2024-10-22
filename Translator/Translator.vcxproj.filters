@@ -27,13 +27,16 @@
     <ClCompile Include="sourcefiles\StlReader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sourcefiles\writer.cpp">
+    <ClCompile Include="sourcefiles\StlWriter.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sourcefiles\Translator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sourcefiles\Reader_base.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sourcefiles\Writer.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -50,10 +53,13 @@
     <ClInclude Include="headerfiles\StlReader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerfiles\Writer.h">
+    <ClInclude Include="headerfiles\StlWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headerfiles\Reader_base.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="headerfiles\Writer.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
