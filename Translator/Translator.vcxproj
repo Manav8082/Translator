@@ -104,7 +104,8 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>E:\ManavWorkspace\Translator\Translator\Translator\headerfiles;E:\ManavWorkspace\Translator\sourcefiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>D:\manavworkspace\Translator\Translator\headerfiles;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -130,7 +131,7 @@
   <ItemGroup>
     <ClCompile Include="sourcefiles\Point.cpp" />
     <ClCompile Include="sourcefiles\StlReader.cpp" />
-    <ClCompile Include="sourcefiles\Reader_base.cpp" />
+    <ClCompile Include="sourcefiles\Reader.cpp" />
     <ClCompile Include="sourcefiles\Translator.cpp" />
     <ClCompile Include="sourcefiles\triangle.cpp" />
     <ClCompile Include="sourcefiles\triangulation.cpp" />
@@ -140,7 +141,7 @@
   <ItemGroup>
     <ClInclude Include="headerfiles\Point.h" />
     <ClInclude Include="headerfiles\StlReader.h" />
-    <ClInclude Include="headerfiles\Reader_base.h" />
+    <ClInclude Include="headerfiles\Reader.h" />
     <ClInclude Include="headerfiles\Triangle.h" />
     <ClInclude Include="headerfiles\Triangulation.h" />
     <ClInclude Include="headerfiles\StlWriter.h" />

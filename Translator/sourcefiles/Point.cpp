@@ -1,20 +1,21 @@
 #include "Point.h"
 
-Point::Point(int x,int y,int z):x(x),y(y),z(z) 
+Point::Point(int x,int y,int z)
+	:mX(x),mY(y),mZ(z) 
 {
 }
 Point::~Point() 
 {
 }
-int Point::getXCoordinate()
+int Point::X()
 {
-	return x;
+	return mX;
 }
-int Point::getYCoordinate()
+int Point::Y()
 {
-	return y;
+	return mY;
 }
-int Point::getZCoordinate()
+int Point::Z()
 {
-	return z;
+	return mZ;
 }

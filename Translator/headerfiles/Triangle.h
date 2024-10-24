@@ -9,7 +9,7 @@ private:
 public:
     Triangle(Point p1, Point p2, Point p3);
     ~Triangle();
-    Point getP1Point() const;
-    Point getP2Point() const;
-    Point getP3Point() const;
+    Point P1() const;
+    Point P2() const;
+    Point P3() const;
 };

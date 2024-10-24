@@ -1,16 +1,13 @@
 #pragma once
-#include<iostream>
-#include<fstream>
-#include<vector>
 #include<string>
-#include"Point.h"
-#include"Triangle.h"
-#include"StlReader.h"
 #include"Writer.h"
+#include"Triangulation.h"
 class StlWriter:private Writer
 {
 public:
 	StlWriter();
 	~StlWriter();
-	void Write(string& outputFile,Triangulation& triangulation);
+	void Write(const string& outputFile,Triangulation& triangulation);
+private:
+	std::string fomulateText(Triangulation triangulation, Point point);
 };

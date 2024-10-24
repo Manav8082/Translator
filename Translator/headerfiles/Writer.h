@@ -4,7 +4,5 @@
 class Writer
 {
 public:
-	Writer();
-	~Writer();
-	virtual void Write(string& outputFile, Triangulation& traingulation) = 0;
+	virtual void Write(const string& outputFile, Triangulation& traingulation) = 0;
 };

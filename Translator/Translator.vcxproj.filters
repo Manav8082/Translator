@@ -33,7 +33,7 @@
     <ClCompile Include="sourcefiles\Translator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="sourcefiles\Reader_base.cpp">
+    <ClCompile Include="sourcefiles\Reader.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="sourcefiles\Writer.cpp">
@@ -56,7 +56,7 @@
     <ClInclude Include="headerfiles\StlWriter.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="headerfiles\Reader_base.h">
+    <ClInclude Include="headerfiles\Reader.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="headerfiles\Writer.h">

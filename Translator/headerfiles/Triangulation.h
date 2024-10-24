@@ -9,8 +9,6 @@ class Triangulation {
 public:
 	Triangulation();
 	~Triangulation();
-	vector<double> UniquePoints;
-	vector<Triangle> TrianglesList;
-	void insertTriangles(Triangle& triangle);
-	
+	vector<double> UniqueNumbers;
+	vector<Triangle> Triangles;
 };
